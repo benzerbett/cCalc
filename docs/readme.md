@@ -1,3 +1,3 @@
 # cCalc Project Website
 
-![cCalc Demo](http://bit.ly/benzer-calc)
+http://bit.ly/benzer-calc
