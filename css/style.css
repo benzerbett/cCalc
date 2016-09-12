@@ -1,0 +1,116 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Defaults
+2.0 Calculator
+3.0 Footer
+--------------------------------------------------------------*/
+/* Slightly lighten a color
+ @param {Color} $color - color to shade
+ @param {Number} $percentage - percentage of `$color` in returned color
+ @return {Color}
+*/
+body {
+  font-family: 'Source Sans Pro', serif; }
+
+/*--------------------------------------------------------------
+  1.0 Defaults
+--------------------------------------------------------------*/
+html, body {
+  height: 100%;
+  font-size: 10px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  background-color: #4e5356; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+*:focus {
+  outline: none; overflow: hidden;}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center; }
+  .parent > .child {
+    display: table-cell;
+    vertical-align: middle; }
+
+/*--------------------------------------------------------------
+  2.0 Calculator
+--------------------------------------------------------------*/
+#calculator {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: #414545;
+  box-shadow: 0 0 40px 10px #404648;
+  font-weight: 300; }
+  #calculator input {
+    background-color: #515659;
+    color: white;
+    font-weight: 300;
+    padding: 90px;
+    width: 780px;
+    height: 204px;
+    border: 0;
+    font-size: 7.5rem;
+    letter-spacing: 0.3rem;
+    text-align: right; }
+  #calculator button {
+    border: none;
+    float: left;
+    margin: 0 1px 1px 0;
+    width: 237px;
+    height: 180px;
+    background: #B2B4B3;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 75px;
+    line-height: 100%;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    #calculator button:hover {
+      background-color: #bebfbe; }
+    #calculator button:nth-child(4n+4), #calculator button:last-child {
+      margin: 0 0 1px 0;
+      width: 240px; }
+    #calculator button.long {
+      width: 477px; }
+    #calculator button.bright {
+      background-color: #E46E6C; }
+      #calculator button.bright:hover {
+        background-color: #e88482; }
+    #calculator button.function {
+      background-color: #4B5053; }
+      #calculator button.function:hover {
+        background-color: #666a6d; }
+
+/*--------------------------------------------------------------
+  3.0 Footer
+--------------------------------------------------------------*/
+#footer {
+  text-align: center;
+  color: #9a9a9a;
+  font-size: 28px;
+  margin-top: 4em; }
+  #footer a {
+    color: #9a9a9a;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    #footer a:hover {
+      color: white; }
+
+/*# sourceMappingURL=style.css.map */

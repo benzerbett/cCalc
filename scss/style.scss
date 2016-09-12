@@ -1,0 +1,130 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Defaults
+2.0 Calculator
+3.0 Footer
+--------------------------------------------------------------*/
+
+@import 'mixins';
+%primaryfont { font-family: 'Source Sans Pro', serif; }
+
+/*--------------------------------------------------------------
+  1.0 Defaults
+--------------------------------------------------------------*/
+html, body {
+  height: 100%;
+  font-size: 10px;
+  font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+  @extend %primaryfont;
+  background-color: #4e5356;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+  > .child {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+/*--------------------------------------------------------------
+  2.0 Calculator
+--------------------------------------------------------------*/
+#calculator {
+  margin: 50px auto;
+  width: 320px;
+  height: 432px;
+  background: #414545;
+  box-shadow: 0 0 40px 10px #404648;
+  font-weight: 300;
+
+  input {
+    background-color: #515659;
+    color: white;
+    font-weight: 300;
+    padding: 30px;
+    width: 260px;
+    height: 68px;
+    border: 0;
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    text-align: right;
+  }
+
+  button {
+    border: none;
+    float: left;
+    margin: 0 1px 1px 0;
+    width: 79px;
+    height: 60px;
+    background: #B2B4B3;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 6.2rem;
+    text-align: center;
+    @include transition(all 0.3s);
+
+    &:hover {
+      background-color: lighten(#B2B4B3, 15%);
+    }
+
+    &:nth-child(4n+4), &:last-child {
+      margin: 0 0 1px 0;
+      width: 80px;
+    }
+
+    &.long {
+      width: 159px;
+    }
+    &.bright {
+      background-color: #E46E6C;
+      &:hover {
+        background-color: lighten(#E46E6C, 15%);
+      }
+    }
+    &.function {
+      background-color: #4B5053;
+      &:hover {
+        background-color: lighten(#4B5053, 15%);
+      }
+    }
+  }
+
+}
+
+/*--------------------------------------------------------------
+  3.0 Footer
+--------------------------------------------------------------*/
+#footer {
+  text-align: center;
+  color: #9a9a9a;
+  font-size: 14px;
+  margin-top: 4em;
+  a {
+    color: #9a9a9a;
+    text-decoration: none;
+    @include transition(all .2s ease-in-out);
+    &:hover {
+      color: white;
+    }
+  }
+}
