@@ -2,7 +2,9 @@
 
 A Javascript calculator that performs basic mathematical functions.
 
-![cCalc Demo](http://bit.ly/benzer-calc)
+cCalc
+
+http://bit.ly/benzer-calc
 
 JS.
 
